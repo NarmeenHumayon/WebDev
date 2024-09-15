@@ -46,10 +46,101 @@ html{
 }
 
 /* dark-theme variables */
-body .dark-theme{
+body.dark-theme{
     --title-color: #f3ecec;
     --text-color: #bfbfbf;
     --container-color: #212121;
     --container-color-alt: #181616;
     --body-color: #2b2b2b;
 }
+
+/* buttons dark & light */
+.change-theme{
+    position:absolute;
+    right:0;
+    top: 2.2rem;
+    display:flex;
+    color: var(--text-color);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.change-theme:hover{
+    color: var(--text-color);
+}
+
+/* font-size vars to scale */
+body.scale-cv{
+    --h1-font-size: .938rem;
+    --h2-font-size: .938rem;
+    --h3-font-size: .857rem;
+    --normal-font-size: .813rem;
+    --small-font-size: .750rem;
+    --smaller-font-size: .688rem;
+}
+
+/* button: pdf-generate */
+.generate-pdf{
+    display: none;
+    position: absolute;
+    top: 2.2rem;
+    left: 0;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.generate-pdf:hover{
+    color: var(--text-color);
+}
+
+/* to scale to A4 size */
+.scale-cv .change-theme,
+.scale-cv .generate-pdf{
+    display: none;
+}
+
+.scale-cv .bd-container{
+    max-width: 700px;
+}
+
+.scale-cv .section{
+    padding: 1.5rem 0 .80rem;
+}
+
+.scale-cv .section-title{
+    margin-bottom: .75rem;
+}
+
+.scale-cv .resume_left,
+.scale-cv .resume_right{
+    padding: 0 1rem;
+}
+
+.scale-cv .home_img{
+    width: 85px;
+    height: 85px;
+}
+
+.scale-cv .home_container{
+    gap: 1rem;
+}
+
+.scale-cv .profile_description{
+    font-size: 12px;
+}
+
+.scale-cv .home_data{
+    gap: 10rem;
+}
+
+.scale-cv .home_address,
+.scale-cv .social_container{
+    gap: .55rem;
+}
+
+.scale-cv .home_address,
+.scale-cv .social_container{
+    gap: .55rem;
+}
+
