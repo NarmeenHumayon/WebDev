@@ -144,3 +144,15 @@ body.scale-cv{
     gap: .55rem;
 }
 
+.scale-cv .home_icon,
+.scale-cv .social_icon,
+.scale-cv .interests_icon{
+  font-size: 1rem;
+}
+
+.scale-cv .education_container,
+.scale-cv .experience_container,
+.scale-cv .certificate_container{
+  gap: 0;
+}
+
