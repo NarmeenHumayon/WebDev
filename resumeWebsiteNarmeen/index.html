@@ -10,16 +10,29 @@
     <!-- Body Section-->
     <body>
         <header><!-- header: no styling; just defines a header -->
-            <nav><!-- nav: no styling; just defines a nav; only 1 nav per page -->
-                <ul><!-- unorderd list; ol means ordered list-->
-                    <li> Intro</li><!-- li can only be used within a ul or ol-->
+            <nav class="nav bd-container"><!-- Defines a responsive container that ensures the content stays within certain margins and maintains padding, typically used in grid layouts or to center content. -->
+                <a href="#" class="nav_logo">Narmeen Humayon</a>
+                <div class="nav-menu" id="nav-menu">
+                    <ul class="nav_list">
+                        <li class="nav_item">
+                            <a href="#home" class="nav_link active-link">
+                                <i class="bx bx-home nav_icon"></i>Home
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+            <!-- <nav><!- nav: no styling; just defines a nav; only 1 nav per page ->
+                <ul><!- unorderd list; ol means ordered list->
+                    <li> Intro</li><!- li can only be used within a ul or ol->
                     <li> About </li>
                     <li> CV</li>
                     <li> Video</li>
                 </ul>
             </nav>
-            <hr><!-- horizonal line -->
-            <h1> CV website Narmeen Humayon</h1>
+            <hr><!- horizonal line ->
+            <h1> CV website Narmeen Humayon</h1> -->
         </header>
         <section>
             <h2> About</h2>
