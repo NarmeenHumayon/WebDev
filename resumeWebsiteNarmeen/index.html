@@ -1,182 +1,173 @@
-<!DOCTYPE html><!-- Doctype tells browser to use latest html -->
+<!DOCTYPE html>
     <html lang="en">
-        <!-- Head Section-->
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width,initial scale=1.0">
-            <!-- css links will come here -->
-            <title> Narmeen Humayon </title>
-        </head>
-        <!-- Body Section-->
-        <body>
-            <header><!-- header: no styling; just defines a header -->
-                <nav class="nav bd-container"><!-- Defines a responsive container that ensures the content stays within certain margins and maintains padding, typically used in grid layouts or to center content. -->
-                    <a href="#" class="nav_logo">Narmeen Humayon</a>
-                    <div class="nav-menu" id="nav-menu">
-                        <ul class="nav_list">
-                            <li class="nav_item">
-                                <a href="#home" class="nav_link active-link">
-                                    <i class="bx bx-home nav_icon"></i>Home
-                                </a>
-                            </li>
-                            <li class="nav_item"></li>
-                                <a href="#profile" class="nav_link active-link">
-                                    <i class="bx bx-home nav_icon"></i>Profile
-                                </a>
-                            </li>
-                            <li class="nav_item"></li>
-                                <a href="#education" class="nav_link active-link">
-                                    <i class="bx bx-home nav_icon"></i>Education
-                                </a>
-                            </li>
-                            <li class="nav_item"></li>
-                                <a href="#skills" class="nav_link active-link">
-                                    <i class="bx bx-home nav_icon"></i>Skills
-                                </a>
-                            </li>
-                            <li class="nav_item"></li>
-                                <a href="#experience" class="nav_link active-link">
-                                    <i class="bx bx-home nav_icon"></i>Experience
-                                </a>
-                            </li>
-                            <li class="nav_item"></li>
-                                <a href="#certifications" class="nav_link active-link">
-                                    <i class="bx bx-home nav_icon"></i>Certifications
-                                </a>
-                            </li>
-                            <li class="nav_item"></li>
-                                <a href="#references" class="nav_link active-link">
-                                    <i class="bx bx-home nav_icon"></i>References
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="nav_toggle" id="nav-toggle">
-                        <i class='bx bx-grid-alt'></i>
-                    </div>
-                </nav>
-                <!-- <nav><!- nav: no styling; just defines a nav; only 1 nav per page ->
-                    <ul><!- unorderd list; ol means ordered list->
-                        <li> Intro</li><!- li can only be used within a ul or ol->
-                        <li> About </li>
-                        <li> CV</li>
-                        <li> Video</li>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- BOX ICONS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css\style.css">
+
+        <!-- Favicon -->
+        <link rel="icon" href="images\img1.jpg"  type="image/jpg">
+
+        <title>Narmeen Humayon</title>
+    </head>
+    <body>
+        <!-- HEADER -->
+        <header class="l-header" id="header">
+            <nav class="nav bd-container">
+                <a href="#" class="nav_logo">Narmeen Humayon</a>
+                <div class="nav_menu" id="nav-menu">
+                    <ul class="nav_list">
+                        <li class="nav_item">
+                            <a href="#home" class="nav_link active-link">
+                                <i class='bx bx-home nav_icon'></i>Home
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#profile" class="nav_link">
+                                <i class='bx bx-user nav_icon'></i>Profile
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#education" class="nav_link">
+                                <i class='bx bx-book nav_icon'></i>Education
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#skills" class="nav_link">
+                                <i class='bx bx-receipt nav_icon'></i>Skills
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#experience" class="nav_link">
+                                <i class='bx bx-briefcase-alt nav_icon'></i>Experience
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#certificate" class="nav_link">
+                                <i class='bx bx-award nav_icon'></i>Certificate
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#references" class="nav_link">
+                                <i class='bx bx-link-external nav_icon'></i>References
+                            </a>
+                        </li>
                     </ul>
-                </nav>
-                <hr><!- horizonal line ->
-                <h1> CV website Narmeen Humayon</h1> -->
-            </header>
+                </div>
+                <div class="nav_toggle" id="nav-toggle">
+                    <i class='bx bx-grid-alt'></i>
+                </div>
+            </nav>
+        </header>
 
-            <main class="1-main bd-container">
-                <!-- div that has elements generated in pdf -->
-                <div class="resume" id="area-cv">
-                    <!-- RIGHT SECTION -->
-                    <div class="resume_right">
-
-                        <!-- a HOME section -->
-                        <section class="home" id="home">
-
-                            <div class="home_container section bd-grid">
-                                <div class="home_data bd-grid">
-                                    <img src="images\img1.jpg" alt="" class="img_home center"> <!-- img in center -->
-                                    <h1 class="home_title">NARMEEN <b>HUMAYON</b></h1>
-                                    <h3 class="home_profession">Web Developer</h3>
-
-                                    <!-- pdf gen button-->
-                                    <div>
-                                        <a download="" href="pdf\CV_NarmeenHumayon_2024.pdf" class="home_button-movil">Download</a>
-                                    </div>
-                                </div>
-                                <div class="home_address bd-grid">
-                                    <span class="home_information">
-                                        <i class="bx bx-map"> &nbsp;</i>Lahore,Punjab
-                                    </span>
-                                    <span class="home_information"></span>
-                                        <i class="bx bx-map"> &nbsp;</i>bscs22013@itu.edu.pk
-                                    </span>
-                                    <span class="home_information"></span>
-                                        <i class="bx bx-map"> &nbsp;</i>+92 331-6663818
-                                    </span>
+        <main class="l-main bd-container">
+            <!-- All elements within this div, is generated in PDF -->
+            <div class="resume" id="area-cv">
+                <div class="resume__left">
+                    <!-- HOME -->
+                    <section class="home" id="home">
+                        <div class="home_containter section bd-grid">
+                            <div class="home_data bd-grid">
+                                <img src="images\narmeen.jpeg" alt="" class="home_img center">
+                                <h1 class="home_title">NARMEEN <b>HUMAYON</b></h1>
+                                <h3 class="home_profession">Web Developer</h3>
+                                <!-- Button to generate and download the pdf. Available for desktop. -->
+                                <div>
+                                    <a download="" href="pdf\CV_NarmeenHumayon_2024.pdf" class="home_button-movil">Download</a>
                                 </div>
                             </div>
-
-                            <!-- Theme Change Button -->
-                            <i class="bx bx-moon change-theme" title="Theme" id="theme-button"></i>
-
-                            <!-- pdf-generate button. Desktop service only -->
-                            <i class="bx bx-download generate-pdf" title="Generate PDF" id="resume-button"></i>
-
-                        </section>
-
-                        <!-- Social Section -->
-                        <section class="section" id="section">
-                            <h2 class="section-title">SOCIAL</h2>
-                            <div class="social_container bd-grid">
-                                <a href="https://www.linkedin.com/in/narmeen-humayon-214328255/" target="_blank" class="social_link">
-                                    <i class="bx bxl-linkedin-square social_icon"></i> @narmeenhumayon
-                                </a>
-                                <a href="https://github.com/NarmeenHumayon" target="_blank" class="social_link">
-                                    <i class="bx bxl-github social_icon"></i> @narmeenhumayon
-                                </a>
-                                <a href="https://www.instagram.com/narmeenhumayon_3818/" target="_blank" class="social_link">
-                                    <i class="bx bxl-twitter social_icon"></i> @narmeenhumayon
-                                </a>
+                            <div class="home_address bd-grid">
+                                <span class="home_information">
+                                    <i class="bx bx-map"> &nbsp; </i> Lahore,Pakistan 
+                                </span>
+                                <span class="home_information">
+                                    <i class="bx bx-envelope"> &nbsp; </i> bscs22013@itu.edu.pk
+                                </span>
+                                <span class="home_information">
+                                    <i class="bx bx-phone"> &nbsp; </i> +92 3316663818
+                                </span>
                             </div>
-                        </section>
-
-                        <!-- Profile Section-->
-                        <section class="profile" id="profile">
-                            <h2 class="section-title">Profile</h2>
-                            <p class="profile_description">
-                                I'm a dedicated Computer Science student at Information Technology University with a CGPA of 3.83. With hands-on experience in software development, team management, and teaching, I have excelled in projects like UAV Drone and Mini Search Engine. My academic journey is complemented by achievements in competitive coding, leadership roles, and a passion for continuous learning
-                            </p>
-                        </section>
-
-                        <!-- Education Section -->
-                        <section class="education" id="education">
-                            <h2 class="section-title">Education</h2>
-                            <div class="education_container bd-grid">
-                                <div class="education_content">
-                                    <div class="education_time">
-                                        <span class="education_rounder"></span>
-                                        <span class="education_line"></span>
-                                    </div>
-                                    <div class="education_data bd-grid">
-                                        <h3 class="education_title">Bachelors in Computer Science</h3>
+                        </div>
+                        
+                        <!-- Theme change button -->
+                        <i class="bx bx-moon change-theme" title="Theme" id="theme-button"></i>
+                        <!-- Button to generate and download the pdf. Available for desktop -->
+                        <i class="bx bx-download generate-pdf" title="Generate PDF" id="resume-button"></i>
+                    </section>          
+                    
+                    <!-- SOCIAL -->
+                    <section class="social section">
+                        <h2 class="section-title">SOCIAL</h2>
+                        <div class="social_container bd-grid">
+                            <a href="https://www.linkedin.com/in/narmeen-humayon-214328255/" target="_blank" class="social_link">
+                                <i class="bx bxl-linkedin-square social_icon"></i> @inarmeenhumayon
+                            </a>
+                            <a href="https://github.com/NarmeenHumayon" target="_blank" class="social_link">
+                                <i class="bx bxl-github social_icon"></i> @inarmeenhumayon
+                            </a>
+                            <a href="https://www.instagram.com/narmeenhumayon_3818/" target="_blank" class="social_link">
+                                <i class="bx bxl-instagram-alt social_icon"></i> @inarmeenhumayon
+                            </a>
+                        </div>
+                    </section>
+                    <!-- PROFILE -->
+                    <section class="profile section" id="profile">
+                        <h2 class="section-title">Profile</h2>
+                        <p class="profile_description">
+                            I'm a dedicated Computer Science student at Information Technology University with a CGPA of 3.83. With hands-on experience in software development, team management, and teaching, I have excelled in projects like UAV Drone and Mini Search Engine. My academic journey is complemented by achievements in competitive coding, leadership roles, and a passion for continuous learning
+                        </p>
+                    </section>
+                    
+                    <!-- EDUCATION -->
+                    <section class="education section" id="education">
+                        <h2 class="section-title">Education</h2>
+                        <div class="education_container bd-grid">
+                            <div class="education_content">
+                                <div class="education_time">
+                                    <span class="education_rounder"></span>
+                                    <span class="education_line"></span>
+                                </div>
+                                <div class="education_data bd-grid">
+                                    <h3 class="education_title">Bachelors in Computer Science</h3>
                                         <span class="education_studies">Information Technology University, Punjab</span>
                                         <span class="education_year">2022 - 2026</span>
                                         <span class="education_grade">3.83/4.00</span>
-                                    </div>
-                                </div>
-                                <div class="education_content">
-                                    <div class="education_time">
-                                        <span class="education_rounder"></span>
-                                        <span class="education_line"></span>
-                                    </div>
-                                    <div class="education_data bd-grid">
-                                        <h3 class="education_title">A-Levels (Sciences)</h3>
-                                        <span class="education_studies">Lahore Grammar School 1 A-1</span>
-                                        <span class="education_year">2020 - 2022</span>
-                                        <span class="education_grade">4 A*s</span>
-                                    </div>
-                                </div>
-                                <div class="education_content">
-                                    <div class="education_time">
-                                        <span class="education_rounder"></span>
-                                    </div>
-                                    <div class="education_data bd-grid">
-                                        <h3 class="education_title">O-Levels (Sciences)</h3>
-                                        <span class="education_studies">LACAS JT,Girls</span>
-                                        <span class="education_year">2016 - 2020</span>
-                                        <span class="education_grade">10 A*s</span>
-                                    </div>
                                 </div>
                             </div>
-                        </section>
-
-                        <!-- Skills Section-->
-                        <section class="skills" id="skills">
-                            <h2 class="section-title">Skills</h2>
+                            <div class="education_content">
+                                <div class="education_time">
+                                    <span class="education_rounder"></span>
+                                    <span class="education_line"></span>
+                                </div>
+                                <div class="education_data bd-grid">
+                                    <h3 class="education_title">A-Levels (Sciences)</h3>
+                                    <span class="education_studies">Lahore Grammar School 1 A-1</span>
+                                    <span class="education_year">2020 - 2022</span>
+                                    <span class="education_grade">4 A*s</span>
+                                </div>
+                            </div>
+                            <div class="education_content">
+                                <div class="education_time">
+                                    <span class="education_rounder"></span>
+                                    <!-- <span class="education_line"></span> -->
+                                </div>
+                                <div class="education_data bd-grid">
+                                    <h3 class="education_title">O-Levels (Sciences)</h3>
+                                    <span class="education_studies">LACAS JT,Girls</span>
+                                    <span class="education_year">2016 - 2020</span>
+                                    <span class="education_grade">10 A*s</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- SKILLS  -->
+                    <section class="skills section" id="skills">
+                        <h2 class="section-title">Skills</h2>
                         <div class="skills_content bd-grid">
                             <ul class="skills_data">
                                 <li class="skills_name">
@@ -210,61 +201,69 @@
                                 </li>
                             </ul>
                         </div>
-                        </section>
-
-                    </div>
-
-                    <!-- LEFT SECTION -->
-                    <div class="resume_left">
-                        <!-- Experience -->
-                        <section class="sec_experience" id="experience">
-                            <h2 class="section-title">Experience</h2>
-                            <div class="experience_container bd-grid">
-                                <div class="experience_content">
-                                    <div class="experience_time">
-                                        <span class="experience_rounder"></span>
-                                        <span class="experience_line"></span>
-                                    </div>
-                                    <div class="experience_data bd-grid">
-                                        <h3 class="experience_title">Teaching Assistant-<b>Discrete Structures</b></h3>
-                                        <span class="experience_company">Aug 2022 - Present | <a href="https://itu.edu.pk/">ITU</a> </span>
-                                        <p class="experience_description">
-                                            <!-- add my para here -->
-                                        </p>
-                                    </div>
-                                    <div class="experience_data bd-grid">
-                                        <h3 class="experience_title">Lincoln Corners Pakistan-<b>Friends-of-Corner</b></h3>
-                                        <span class="experience_company">July 2022 - Present | <a href="https://pk.usembassy.gov/lincoln-corners-pakistan/">Lincoln Corners</a> </span>
-                                        <p class="experience_description">
-                                            <!-- add my para here -->
-                                        </p>
-                                    </div>
-                                    <div class="experience_data bd-grid">
-                                        <h3 class="experience_title">PreparENG-<b>HR Manager</b></h3>
-                                        <span class="experience_company">Dec 2022 - Present | <a href="https://preply.com/">Preply</a> </span>
-                                        <p class="experience_description">
-                                            <!-- add my para here -->
-                                            <!-- After getting some experience, I hired as <b>Jr. Web Developer</b> at <a href="https://itartificer.com/">IT Artificer</a> in April 2021. ITA serving its Services all over the world especially in middle-east. ITA mainly focusing on delivering high quality software solutions which enable customers to achieve their critical IT objectives. -->
-                                        </p>
-                                    </div>
+                    </section>
+                </div>
+                <div class="resume__right">
+                    <!-- EXPERIENCE -->
+                    <section class="experience section" id="experience">
+                        <h2 class="section-title">Experience</h2>
+                        <div class="experience_container bd-grid">
+                            <div class="experience_content">
+                                <div class="experience_time">
+                                    <span class="experience_rounder"></span>
+                                    <span class="experience_line"></span>
                                 </div>
-                                <div class="experience_content">
-                                    <div class="experience_time">
-                                        <span class="experience_rounder"></span>
-                                    </div>
-                                    <div class="experience_data bd-grid">
-                                        <h3 class="experience_title">4 Week Summer Internship</h3>
-                                        <span class="experience_company">Aug 2023 - Sep 2023 | <a href="https://themonal.com/">The Monal Group</a></span>
-                                        <p class="experience_description">
-                                            <!-- my para here-->
-                                        </p>
-                                    </div>
+                                <div class="experience_data bd-grid">
+                                    <h3 class="experience_title">Teaching Assistant-<b>Discrete Structures</b></h3>
+                                    <span class="experience_company">Aug 2022 - Present | <a href="https://itu.edu.pk/">ITU</a> </span>
+                                    <p class="experience_description">
+                                        I am working as a TA for Dr.Muddassir, our chairperson as well as teacher for Discrete Structures.
+                                    </p>
                                 </div>
                             </div>
-                        </section>
-                        <!-- Certifications -->
-                        <section class="sec_certificate" id="certification">
-                            <h2 class="section-title">Certificates</h2>
+                            <div class="experience_content">
+                                <div class="experience_time">
+                                    <span class="experience_rounder"></span>
+                                    <!-- <span class="experience_line"></span> -->
+                                </div>
+                                <div class="experience_data bd-grid">
+                                    <h3 class="experience_title">Lincoln Corners Pakistan-<b>Friends-of-Corner</b></h3>
+                                        <span class="experience_company">July 2022 - Present | <a href="https://pk.usembassy.gov/lincoln-corners-pakistan/">Lincoln Corners</a> </span>
+                                        <p class="experience_description">
+                                            Im a friend of corner at Lincoln Corner, where i get the chance to meet and greet with the US Embassy, the VR and STEM technologies available there. As a member, i get a chance to Host events like the Robotics Club, World Chocoloate Day, Book Club and much more.
+                                        </p>
+                                </div>
+                            </div>
+                            <div class="experience_content"></div>
+                                <div class="experience_time">
+                                    <span class="experience_rounder"></span>
+                                    <span class="experience_line"></span>
+                                </div>
+                                <div class="experience_data bd-grid">
+                                    <h3 class="experience_title">PreparENG-<b>HR Manager</b></h3>
+                                        <span class="experience_company">Dec 2022 - Present | <a href="https://preply.com/">Preply</a> </span>
+                                        <p class="experience_description">
+                                            As a member, i hired over 200+ teachers for various fields to teach on an international students of all ages.
+                                        </p>
+                                </div>
+                            </div>
+                            <div class="experience_content">
+                                <div class="experience_time">
+                                    <span class="experience_rounder"></span>
+                                </div>
+                                <div class="experience_data bd-grid">
+                                    <h3 class="experience_title">4 Week Summer Internship</h3>
+                                    <span class="experience_company">Aug 2023 - Sep 2023 | <a href="https://themonal.com/">The Monal Group</a></span>
+                                    <p class="experience_description">
+                                        My inetrnship helped my experience in all departments of a restaurant business.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- CERTIFICATES -->
+                    <section class="certificate section" id="certificate">
+                        <h2 class="section-title">Certificates</h2>
                         <div class="certificate_container bd-grid">
                             <div class="certificate_content">
                                 <h3 class="certificate_title">The Monal Group - 2023</h3>
@@ -279,41 +278,32 @@
                                 </p>
                             </div>
                         </div>
-                        </section>
-                        <!-- References -->
-                        <section class="sec_references" id="references">
-                            <!-- reference section -->
-                            <h2 class="section-title">References</h2>
-                            <div class="references_container bd-grid">
-                                <div class="references_content bd-grid">
-                                    <span class="references_subtitle">CEO -The Monal Group</span>
-                                    <h3 class="references_title">Sir Luqman Ali Afzal</h3>
-                                    <ul class="references_contact">
-                                        <li>Phone:  051-111-777-778</li>
-                                        <li>Email:  hr@themonal.com</li>
-                                    </ul>
-                                </div>
-                                <div class="references_content bd-grid"></div>
-                                    <span class="references_subtitle">CEO -Honda Ring Road</span>
-                                    <h3 class="references_title">Sir Humayon Qaiser</h3>
-                                    <ul class="references_contact">
-                                        <li>Phone:  +92-3008483195</li>
-                                        <li>Email:  humayon.qaiser@gmail.com</li>
-                                    </ul>
-                                </div>
-                                <div class="references_content bd-grid">
-                                    <span class="references_subtitle">Professor- PF/OOP/DSA</span>
-                                    <h3 class="references_title">Sir Sarfraz Raza</h3>
-                                    <ul class="references_contact">
-                                        <li>Phone:  042-111-111-ITU(488) </li>
-                                        <li>Email:  sarfraz.raza@itu.edu.pk</li>
-                                    </ul>
-                                </div>
+                    </section>
+                    <!-- REFERENCES -->
+                    <section class="references section" id="references">
+                        <h2 class="section-title">References</h2>
+                        <div class="references_container bd-grid">
+                            <div class="references_content bd-grid">
+                                <span class="references_subtitle">CEO The Monal Group</span>
+                                <h3 class="references_title">Sir Luqman Ali Afzal</h3>
+                                <ul class="references_contact">
+                                    <li>Phone:  051-111-777-778</li>
+                                    <li>Email:  hr@themonal.com</li>
+                                </ul>
                             </div>
-                        </section>
-                        <!-- Languages -->
-                        <section class="sec_languages" id="languages">
-                            <h2 class="section-title">Languages</h2>
+                            <div class="references_content bd-grid">
+                                <span class="references_subtitle">Professor- PF/OOP/DSA</span>
+                                <h3 class="references_title">Sir Sarfraz Raza</h3>
+                                <ul class="references_contact">
+                                    <li>Phone:  042-111-111-ITU(488)</li>
+                                    <li>Email:  sarfraz.raza@itu.edu.pk</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- LANGUAGES -->
+                    <section class="languages section">
+                        <h2 class="section-title">Languages</h2>
                         <div class="languages_container">
                             <ul class="languages_content bd-grid">
                                 <li class="languages_name">
@@ -327,18 +317,15 @@
                                 </li>
                             </ul>
                         </div>
-                        </section>
-                        <!-- Interests Areas -->
-                        <section class="sec_interests" id="interests">
-                            <h2 class="section-title">Interests</h2>
+                    </section>
+                    
+                    <!-- INTERESTS -->
+                    <section class="interests section">
+                        <h2 class="section-title">Interests</h2>
                         <div class="interests_container bd-grid">
                             <div class="interests_content">
                                 <i class='bx bx-code-alt interests_icon'></i>
-                                <span class="interests_name">Web Development</span>
-                            </div>
-                            <div class="interests_content"></div>
-                                <i class='bx bx-code-alt interests_icon'></i>
-                                <span class="interests_name">Canva/Graphic Designing</span>
+                                <span class="interests_name">Coding</span>
                             </div>
                             <div class="interests_content">
                                 <i class='bx bxs-coffee-togo interests_icon' ></i>
@@ -349,18 +336,22 @@
                                 <span class="interests_name">Traveling</span>
                             </div>
                             <div class="interests_content">
-                                <i class="bx bxs-camera interests_icon "></i>
+                                <i class="bx bxl-adobe interests_icon "></i>
                                 <span class="interests_name">Photography</span>
                             </div>
                         </div>
-                        </section>
-                    </div>
-
+                    </section>
                 </div>
-            </main>
+            </div>        
+        </main> 
 
-        </body><br>
-    </html>
+        <!-- SCROLL TOP -->
+            <a href="#" class="scrolltop" id="scrolltop">
+                <i class="bx bx-up-arrow-alt scrolltop_icon"></i>
+            </a>
+        
+    </body> <br>
+</html>
 
     <!-- 
     <section>
