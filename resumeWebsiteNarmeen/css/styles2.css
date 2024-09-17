@@ -1,0 +1,208 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* VARIABLES CSS */
+/* Declaring variables for colors, fonts, and sizes for easy reuse */
+:root {
+    --header-height: 3rem; /* Height of the header */
+    
+    /* Colors */
+    --title-color: #d28e8e; /* Pinkish color for titles */
+    --text-color: #4d4747; /* General text color */
+    --text-color-light: #717070; /* Lighter text color for subtitles */
+    --container-color: #fcfbfb; /* Background color of containers */
+    --container-color-alt: #efe8e8; /* Alternate background color for sections */
+    --body-color: #f1f0f0; /* General background color */
+    
+    /* Font and typography */
+    --body-font: 'Poppins', sans-serif; /* Main font for the website */
+    --h1-font-size: 1.5rem; /* Size for H1 */
+    --h2-font-size: 1.25rem; /* Size for H2 */
+    --h3-font-size: 1rem; /* Size for H3 */
+    --normal-font-size: 0.938rem; /* Standard text size */
+    --small-font-size: 0.875rem; /* Small text size */
+    --smaller-font-size: 0.813rem; /* Even smaller text size */
+    
+    /* Font weight */
+    --font-medium: 500; /* Medium font weight */
+    --font-semi-bold: 600; /* Semi-bold font weight */
+    
+    /* Margins */
+    --mb-1: 0.5rem; /* Small margin */
+    --mb-2: 1rem; /* Medium margin */
+    --mb-3: 1.5rem; /* Large margin */
+}
+
+/* RESETTING */
+*,
+::before,
+::after {
+    box-sizing: border-box; /* Ensures padding and margin don't affect total element width */
+}
+
+/* Smooth scroll for better user experience */
+html {
+    scroll-behavior: smooth;
+}
+
+/* General body styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--body-font); /* Apply the Poppins font to the whole site */
+    font-size: var(--normal-font-size); /* Normal text size */
+    background-color: var(--body-color); /* Set background color */
+    color: var(--text-color); /* Default text color */
+}
+
+/* Header styling */
+header {
+    width: 100%;
+    position: fixed; /* Fix header at the top */
+    top: 0;
+    left: 0;
+    z-index: 100; /* Make sure it stays on top */
+    background-color: #fff; /* White background */
+    padding: 1rem 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for effect */
+}
+
+/* Navigation menu inside header */
+.nav {
+    display: flex;
+    justify-content: space-between; /* Space out items */
+    align-items: center; /* Align them in the middle */
+}
+
+/* Logo styling */
+.nav_logo {
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-semi-bold); /* Semi-bold logo */
+    color: var(--title-color); /* Pinkish color for the logo */
+}
+
+/* Navigation list (menu) styling */
+.nav_list {
+    list-style-type: none; /* Remove bullet points */
+    display: flex;
+    gap: 1.5rem; /* Space between menu items */
+}
+
+/* Styling each navigation link */
+.nav_link {
+    text-decoration: none; /* Remove underline */
+    font-size: var(--normal-font-size);
+    color: var(--text-color); /* Default text color */
+}
+
+.nav_link:hover {
+    color: var(--title-color); /* Change color when hovered */
+}
+
+/* Home section styling (profile image and name) */
+.home {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+/* Make the profile image larger and round */
+.home_img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Circular image */
+    margin-bottom: var(--mb-2); /* Add margin below the image */
+}
+
+/* Profile title (name) */
+.home_title {
+    font-size: var(--h1-font-size);
+    color: var(--title-color); /* Pinkish title color */
+    font-weight: var(--font-semi-bold);
+}
+
+/* Address and contact details styling */
+.home_address {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align all the items */
+    gap: 0.5rem; /* Add space between items */
+}
+
+/* General section layout */
+.section {
+    padding: 2rem 1rem;
+}
+
+/* Styling for all section titles */
+.section-title {
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-semi-bold);
+    text-transform: uppercase; /* Capitalize titles */
+    color: var(--title-color); /* Pinkish color for the title */
+    text-align: left;
+    margin-bottom: var(--mb-2); /* Margin below the title */
+}
+
+/* Profile description styling */
+.profile_description {
+    text-align: left;
+    margin-left: 1rem; /* Align to the left */
+}
+
+/* Swapping sections - right section first */
+.resume__right {
+    float: left;
+    width: 50%;
+}
+
+/* Left section next */
+.resume__left {
+    float: right;
+    width: 50%;
+}
+
+/* Experience and certificate sections */
+.experience_container, .certificate_container, .references_container {
+    padding: 1rem;
+    margin-left: 1rem;
+}
+
+/* Skills section */
+.skills_content {
+    display: flex;
+    justify-content: space-between; /* Divide skills into two columns */
+    padding-left: 1rem;
+}
+
+/* Embedding video section at the end */
+.video {
+    margin-top: 3rem; /* Add space above the video */
+    text-align: center; /* Center the video */
+}
+
+.video iframe {
+    border: none; /* Remove border around video */
+}
+
+/* Social links */
+.social_container {
+    display: flex;
+    justify-content: space-around; /* Space out social links */
+    padding-left: 1rem;
+}
+
+.social_link {
+    color: var(--text-color);
+    font-size: var(--normal-font-size);
+}
+
+.social_link:hover {
+    color: var(--title-color); /* Pink color on hover */
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--container-color-alt);
+}
